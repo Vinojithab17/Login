@@ -64,7 +64,7 @@ class MainClerk extends Clerk{
 
     }
 }
-//$clerktest = new MainClerk("vinojith","vino@17","fuck_u");
+//$clerktest = new MainClerk("vinojith","vino@17","u");
 $clerktest = MainClerk::getConnect();
-$clerktest->setDetails("vinojith","vino@17","fuck_u");
+$clerktest->setDetails("vinojith","vino@17","u");
 ?>
