@@ -77,7 +77,7 @@ class MainClerk extends Clerk{
 
     }
 }
-$clerktest = new MainClerk("vinojith","vino@17","fuck_u");
+$clerktest = new MainClerk("vinojith","vino@17","u");
 //----------------------------
 class Logger{
     private $Admin;
@@ -133,7 +133,7 @@ class Logger{
      
 }
 
-$clerktest = new MainClerk("vinojith","vino@17","fuck_u");
+$clerktest = new MainClerk("vinojith","vino@17","u");
 $logger = new Logger($username);
 $logger->validate_User($pass);
 echo "<script>alert('sucessfully!!!');</script>";
