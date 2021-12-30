@@ -1,49 +1,6 @@
 <?php
+require 'Clerk.php';
 
-//use MainClerk as GlobalMainClerk;
-class Clerk{
-  private $name;
-  private $Email;
-  private $password;
-
-  private static $Admin;
-  //private $ID;
-
-  private final function __construct() {
-    echo __CLASS__ . " initialize only once ";
-  }
-  public static function getConnect() {
-    if (!isset(self::$Admin)) {
-        self::$Admin = new Clerk();
-    }
-     
-    return self::$Admin;
-}
-  public function setDetails($name, $E , $P) {
-      $this->name = $name;
-      $this->Email = $E;
-      $this->password = $P;
-      echo "<br>";
-      echo "clerk constructed";
-      echo "<br>";
-     // $this->ID = $id;
-    }
-    public function get_name() {
-      return $this->name;
-    }
-    public function get_Email() {
-      return $this->Email;
-    }
-    public function get_Password() {
-      return $this->password;
-    }
-   /* public function get_ID() {
-      return $this->ID;
-    }*/
-
-    public function get_Page(){}
-
-}
 class MainClerk extends Clerk{
 
     private $page = "<div class=\"banner\">
@@ -59,12 +16,14 @@ class MainClerk extends Clerk{
   </div>";
     
     public function get_Page(){
-        return $this ->page;
-
+        return $this -> page;
+        //header("location:login.html");
+        //header("location:Admin_Home/admin_home.html");
 
     }
+
 }
 //$clerktest = new MainClerk("vinojith","vino@17","u");
-$clerktest = MainClerk::getConnect();
-$clerktest->setDetails("vinojith","vino@17","u");
+//$clerktest = new MainClerk()
+//$clerktest->setDetails("vinojith","vino@17","u");
 ?>
