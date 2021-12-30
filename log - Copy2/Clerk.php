@@ -34,31 +34,4 @@ abstract class Clerk{
 
 }
 
-
-
-/*
----------------------------------------------------------
-$password = "Vinono18";
-$uppercase = preg_match('@[A-Z]@', $password);
-$lowercase = preg_match('@[a-z]@', $password);
-$number    = preg_match('@[0-9]@', $password);
-$special = preg_match('/[#$@!%^&*()+=\-\[\]\';,.\/{}|":<>?~\\\\]/',  $password);
-
-if(!$special||!$uppercase || !$lowercase || !$number || strlen($password) < 8) {
-  echo "can't accept  $password <br>";
-}else{
-  header("location:login.html");
-  //echo "password Accepted<br>";
-}
-$email = "abc123@sdsd.com"; 
-//$email = "abc@sdsd.com";
-$regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/'; 
-if (preg_match($regex, $email)) {
- echo $email . " is a valid email.<br> We can accept it.";
-} else { 
- echo $email . " is an invalid email.<br> Please try again.";
-} 
------------------------------------------------------------------
-
-}*/
 ?>
