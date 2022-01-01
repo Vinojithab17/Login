@@ -8,8 +8,19 @@
     <link rel="stylesheet" href="facilities_page.css">
 </head>
 <body>
+    <?php
+    session_start();
+
+    $name = $_SESSION["Hospital_Clerk"];
+    echo "<div class=\"Hospital-Name\">$name</div>";
+    class identifire{
+        public function get_Hospital($name){
+            echo "<div class=\"Hospital-Name\">$name</div>";
+        }
+    }
     
-    <div class="Hospital-Name">Hospital Name</div>
+    ?>
+    
     <div class="container">
     
     
